@@ -4,12 +4,15 @@ import styles from "./StudentList.module.scss";
 const StudentList = (props) => {
   const studentList = props.list;
   return (
-    <div>
+    <div className={styles.student}>
       {studentList.map((student) => {
         return (
-          <div>
-            <h4>{student.name}</h4>
-            <h5>{student.id}</h5>
+          <div className={styles.details}>
+            <h5>FirstName:{student.firstName}</h5>
+            <h5>LastName:{student.lastName}</h5>
+            <h5>Age:{student.age}</h5>
+            <h5>Location:{student.location}</h5>
+            <h5>Id:{student.id}</h5>
           </div>
         );
       })}

@@ -1,11 +1,19 @@
 import React from "react";
 import styles from "./StudentList.module.scss";
 
-const StudentList = () => {
+const StudentList = (props) => {
+  const studentList = props.list;
   return (
-    <>
-      <p>StudentList works</p>
-    </>
+    <div>
+      {studentList.map((student) => {
+        return (
+          <div>
+            <h4>{student.name}</h4>
+            <h5>{student.id}</h5>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

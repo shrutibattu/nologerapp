@@ -1,0 +1,23 @@
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: lightblue;
+  /* height: 75px;
+    width: auto;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around; */
+}
+.navList {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
+.navItem {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 20px;
+}

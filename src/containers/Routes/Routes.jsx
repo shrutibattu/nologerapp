@@ -3,6 +3,7 @@ import styles from "./Routes.module.scss";
 import { Switch, Route } from "react-router-dom";
 import StudentDetails from "../StudentDetails";
 import StudentList from "../StudentList";
+import StudentCreate from "../StudentCreate/StudentCreate";
 import { useState, useEffect } from "react";
 
 const Routes = () => {
@@ -29,6 +30,9 @@ const Routes = () => {
         </Route>
         <Route path="/studentdetails">
           <StudentDetails />
+        </Route>
+        <Route path="/studentcreate">
+          <StudentCreate />
         </Route>
       </Switch>
     </>
